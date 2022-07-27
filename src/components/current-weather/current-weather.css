@@ -5,6 +5,8 @@
   color: #fff;
   background-color: #333;
   margin: 20px auto 0 auto;
+  cursor: default;
+  user-select: none;
   padding: 0px 20px 20px 20px;
 }
 
@@ -35,11 +37,25 @@
 }
 
 .temp {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 70px;
   width: auto;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
+  transition: all ease-in-out 0.5s;
   margin: 10px 0;
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    limegreen,
+    cyan,
+    rgb(185, 5, 185),
+    pink
+  );
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .details {
